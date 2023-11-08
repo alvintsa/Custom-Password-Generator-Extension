@@ -1,0 +1,27 @@
+body {
+    width: 400px;
+    height: 150px;
+}
+
+/* Style labels */
+label {
+    display: block; /* Ensures labels appear on new lines */
+    margin-bottom: 5px; /* Adds space between label and input */
+  }
+
+  /* Style input fields */
+input {
+    width: 70%; /* Make inputs take up full width */
+    padding: 8px; /* Add padding for better appearance */
+    margin-bottom: 2px; /* Space between input fields */
+    border: 1px solid #ccc; /* Add a border */
+    border-radius: 4px; /* Add some rounded corners */
+  }
+
+
+.warning {
+    position: absolute;
+    padding: 5px;
+    background-color: #ff0000;
+    color: #ffffff;
+  }
