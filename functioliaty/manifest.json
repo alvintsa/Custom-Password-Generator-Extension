@@ -1,0 +1,14 @@
+{
+    "manifest_version": 2,
+    "name": "Password Generator",
+    "version": "1.0",
+    "description": "Generate strong passwords with ease",
+    "permissions": [],
+    "browser_action": {
+      "default_popup": "index.html",
+      "default_icon": {
+        "16": "images/image1.jpg"
+      }
+    }
+  }
+  
