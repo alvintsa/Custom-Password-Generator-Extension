@@ -37,8 +37,6 @@ document.getElementById('generateBtn').addEventListener('click', function(event)
   if ((pass_length == "" || pass_length < 10 || pass_length > 30) && word_one.length == 0){ // length is empty or not eough AND word is empty
     document.getElementById("password_length").style.borderColor = "";
     document.getElementById("word_one").style.borderColor = "";
-    
-    console.log("first error");
     lengthError();
     wordError();
 
@@ -48,7 +46,7 @@ document.getElementById('generateBtn').addEventListener('click', function(event)
   else if((pass_length == "" || pass_length < 10 || pass_length > 30) && word_one.length != 0){ // length is empty or not enough but word is good
     document.getElementById("password_length").style.borderColor = "";
     document.getElementById("word_one").style.borderColor = "";
-    console.log("second error");
+
     lengthError();
     return;
   }
@@ -56,22 +54,24 @@ document.getElementById('generateBtn').addEventListener('click', function(event)
   else if((pass_length != "" || pass_length > 10 || pass_length <= 30) && word_one.length == 0) {  // lenght is good but word not good
     document.getElementById("password_length").style.borderColor = "";
     document.getElementById("word_one").style.borderColor = "";
-    console.log("thurd error");
+
     wordError();
     return;
   }
 
 
+else{ // input values are valid!! 
 
-
-
+  generated_pass = generatePassword(pass_length, word_one, word_two);
   
-
-  generated_pass = "!23"
-  
-
-
   document.getElementById("generated_password").innerText = "Generated Password: " + generated_pass;
+
+}
+
+
+  
+
+ 
   
 }
 )
