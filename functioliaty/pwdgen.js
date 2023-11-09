@@ -28,10 +28,18 @@ document.getElementById('generateBtn').addEventListener('click', function(event)
     pass_box.style.borderColor = "red";
     word_one_box.style.borderColor = "red";
     showWarning('pass_length', 'word_one');
-
-
     return; // Stop further execution
   }
+
+  if (pass_length < 10 || pass_length > 30){
+
+    alert('Password length should be between 10 and 30 characters.'); // Display an alert message
+    var pass_box = document.getElementById("password_length");
+    pass_box.style.borderColor = "red";
+    return; // Stop further execution
+  }
+
+
 
   document.getElementById('pass_gen_form').submit();
   
