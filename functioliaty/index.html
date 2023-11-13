@@ -9,11 +9,11 @@
   <div>
     <form id="pass_gen_form">
       <label for = "password_length"> Password Length: </label>
-      <input type="number" id="password_length" placeholder="Password Length (10-30 characters)" required min = "10" max = "30">
+      <input type="number" id="password_length" placeholder="Password Length (Minimum 15 Characters, May be longer depending on input words)" required min = "15">
       <label for = "word_one"> First word: </label>
       <input type="text" id="word_one" placeholder="Word you can easily remember" required>
       <label for = "word_two"> Second word (optional): </label>
-      <input type="text" id="word_two" placeholder="Another word you can remember (optional)">
+      <input type="text" id="word_two" placeholder="Another word you can remember" required>
       <button id="generateBtn" type="button">Generate your unique password!</button>
     </form>
   </div>
